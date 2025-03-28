@@ -15,7 +15,19 @@ public class Empleado {
 	 edad = 99;
  }
  
- 	//GETTERS & SETTERS
+ public Empleado(String nombre, int edad){
+	 contadorId++;
+	 this.id = contadorId;
+	 this.edad = edad;
+	 this.nombre = nombre;
+ }
+ 
+ 	@Override
+	public String toString() {
+		return "Empleado ID: " + id + ", nombre = " + nombre + ", edad = " + edad + ".";
+	}
+
+	//GETTERS & SETTERS
 	public int getId() {
 		return id;
 	}
