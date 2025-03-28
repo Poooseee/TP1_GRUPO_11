@@ -8,12 +8,16 @@ public class Empleado {
  
  private static int contadorId = 999;
  
+ public Empleado() {
+	 contadorId++;
+	 this.id = contadorId;
+	 nombre = "sin nombre";
+	 edad = 99;
+ }
+ 
  	//GETTERS & SETTERS
 	public int getId() {
 		return id;
-	}
-	public void setId(int id) {
-		this.id = id;
 	}
 	public String getNombre() {
 		return nombre;
