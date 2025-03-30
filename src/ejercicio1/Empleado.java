@@ -28,8 +28,8 @@ public class Empleado {
 	}
  	
  	//DEVUELVE PROXIMO ID
-	public static int devolverProximoId() {
-		return (cont + 1) ;
+	public static int devuelveProximoId() {
+		return( contadorId + 1) ;
 	}
 	
 	//GETTERS & SETTERS
