@@ -26,7 +26,12 @@ public class Empleado {
 	public String toString() {
 		return "Empleado ID: " + id + ", nombre = " + nombre + ", edad = " + edad + ".";
 	}
-
+ 	
+ 	//DEVUELVE PROXIMO ID
+	public static int devolverProximoId() {
+		return (cont + 1) ;
+	}
+	
 	//GETTERS & SETTERS
 	public int getId() {
 		return id;
